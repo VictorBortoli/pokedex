@@ -62,7 +62,7 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
   .flip-card {
-    background-color: #98d7a5;
+    // background-color: #98d7a5;
     width: 250px;
     height: 315px;
 
@@ -93,10 +93,6 @@ export const Card = styled.div`
     backface-visibility: hidden;
   }
 
-  .flip-card-front {
-    background-color: #98d7a5;
-  }
-
   .flip-card-front h2,
   .flip-card-back h2 {
     color: #252525;
@@ -119,7 +115,6 @@ export const Card = styled.div`
     display: grid;
     place-items: center;
 
-    background-color: #98d7a5;
     color: white;
     transform: rotateY(180deg);
   }
@@ -136,5 +131,66 @@ export const Card = styled.div`
 
   img {
     width: 100%;
+  }
+
+  .steel {
+    background-color: #f4f4f4;
+  }
+
+  .fire {
+    background-color: #fddfdf;
+  }
+
+  .grass {
+    background-color: #defde0;
+  }
+
+  .electric {
+    background-color: #fcf7de;
+  }
+
+  .water,
+  .ice {
+    background-color: #def3fd;
+  }
+
+  .ground {
+    background-color: #f4e7da;
+  }
+
+  .rock {
+    background-color: #d5d5d4;
+  }
+
+  .fairy {
+    background-color: #fceaff;
+  }
+
+  .poison {
+    background-color: #98d7a5;
+  }
+
+  .bug {
+    background-color: #f8d5a3;
+  }
+
+  .dragon {
+    background-color: #97b3e6;
+  }
+
+  .psychic {
+    background-color: #eaeda1;
+  }
+
+  .flying {
+    background-color: #f5f5f5;
+  }
+
+  .fighting {
+    background-color: #e6e0d4;
+  }
+
+  .normal {
+    background-color: #f5f5f5;
   }
 `
