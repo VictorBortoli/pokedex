@@ -62,7 +62,6 @@ export const Cards = styled.div`
 
 export const Card = styled.div`
   .flip-card {
-    // background-color: #98d7a5;
     width: 250px;
     height: 315px;
 
@@ -193,4 +192,10 @@ export const Card = styled.div`
   .normal {
     background-color: #f5f5f5;
   }
+`
+
+export const Error = styled.span`
+  display: block;
+  color: #c53030;
+  margin-top: 8px;
 `
