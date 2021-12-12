@@ -2,8 +2,8 @@
 import { shade } from 'polished'
 
 export const Title = styled.div`
-  margin-top: 48px;
-  padding: 16px 32px;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
 
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.1);
@@ -13,28 +13,34 @@ export const Title = styled.div`
   h1 {
     opacity: 1;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2.375rem;
     text-align: center;
 
     color: #ffffff;
   }
+
+  @media (max-width: 480px) {
+    & {
+      width: 90%;
+    }
+  }
 `
 
 export const Input = styled.div`
-  margin-top: 60px;
+  margin-top: 3.75rem;
 
   input,
   button {
-    padding: 24px 32px;
+    padding: 1.5rem 2rem;
 
     border: none;
     outline: none;
 
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   input {
-    width: 605px;
+    width: 37.8125rem;
     border-radius: 16px 0 0 16px;
   }
 
@@ -48,27 +54,33 @@ export const Input = styled.div`
   button:hover {
     background: ${shade(0.1, '#98D7A5')};
   }
+
+  @media (max-width: 480px) {
+    input {
+      width: 65%;
+    }
+  }
 `
 
 export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
+  gap: 2rem;
 
-  margin-top: 70px;
-  margin-bottom: 48px;
+  margin-top: 4.375rem;
+  margin-bottom: 3rem;
 `
 
 export const Card = styled.div`
   .flip-card {
-    width: 250px;
-    height: 315px;
+    width: 15.625rem;
+    height: 19.6875rem;
 
     border-radius: 16px;
 
-    padding: 24px;
-    perspective: 1000px;
+    padding: 1.5rem;
+    perspective: 62.5rem;
   }
 
   .flip-card-inner {
@@ -80,7 +92,8 @@ export const Card = styled.div`
     transform-style: preserve-3d;
   }
 
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner,
+  .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
   }
 
@@ -97,14 +110,14 @@ export const Card = styled.div`
     color: #252525;
 
     font-weight: 400;
-    font-size: 26px;
+    font-size: 1.625rem;
     text-align: center;
   }
 
   .flip-card-front p,
   .flip-card-back p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
 
     color: #828282;
@@ -120,12 +133,6 @@ export const Card = styled.div`
 
   .flip-card-back h2 {
     font-weight: 700;
-  }
-
-  .flip-card-back .divider {
-    width: 100%;
-    height: 1px;
-    background-color: #252525;
   }
 
   img {
@@ -197,5 +204,5 @@ export const Card = styled.div`
 export const Error = styled.span`
   display: block;
   color: #c53030;
-  margin-top: 8px;
+  margin-top: 0.5rem;
 `
