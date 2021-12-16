@@ -26,7 +26,7 @@ const Dashboard: React.FC = () => {
 
   const searchPokemon = async () => {
     if (!newPokemon) {
-      setInputError('Digite um Pokemon para pesquisar')
+      setInputError('Digite o nome de um Pokemon')
       return
     }
 
@@ -89,8 +89,9 @@ const Dashboard: React.FC = () => {
 
   return (
     <>
-      <Title>
-        <h1>Tudo que você precisa saber sobre os Pokémons está aqui!</h1>
+    
+      <Title id='imagem'>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f6/Pok%C3%A9mon_GO_logo.png/640px-Pok%C3%A9mon_GO_logo.png" alt="" />
       </Title>
 
       <Input>
@@ -119,7 +120,7 @@ const Dashboard: React.FC = () => {
                 <div className="flip-card-back">
                   <div>
                     <h2>Habilidade</h2>
-                    <p>{pokemon.abilities.join(' | ')}</p>
+                   
                   </div>
                 </div>
               </div>

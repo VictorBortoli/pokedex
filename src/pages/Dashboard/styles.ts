@@ -2,36 +2,25 @@
 import { shade } from 'polished'
 
 export const Title = styled.div`
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 1rem 2rem;
-
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(40px);
-  border-radius: 16px;
-
-  h1 {
-    opacity: 1;
-    font-weight: bold;
-    font-size: 2.375rem;
-    text-align: center;
-
-    color: #ffffff;
-  }
 
   @media (max-width: 480px) {
     & {
       width: 90%;
     }
   }
+  img{
+    width: 500px
+  }
 `
 
 export const Input = styled.div`
-  margin-top: 3.75rem;
+  margin-top: 1.75rem;
 
   input,
   button {
-    padding: 1.5rem 2rem;
+    padding: 1.0rem 1rem;
 
     border: none;
     outline: none;
@@ -40,20 +29,18 @@ export const Input = styled.div`
   }
 
   input {
-    width: 37.8125rem;
-    border-radius: 16px 0 0 16px;
+    width: 20.8125rem;
+    border-radius: 10px 0 0 10px;
+    
   }
 
   button {
-    background-color: #98d7a5;
+    background-color: #ab071d;
     color: #ffffff;
 
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 10px 10px 0;
   }
 
-  button:hover {
-    background: ${shade(0.1, '#98D7A5')};
-  }
 
   @media (max-width: 480px) {
     input {
@@ -66,9 +53,9 @@ export const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 3.5rem;
 
-  margin-top: 4.375rem;
+  margin-top: 5.375rem;
   margin-bottom: 3rem;
 `
 
@@ -77,50 +64,10 @@ export const Card = styled.div`
     width: 15.625rem;
     height: 19.6875rem;
 
-    border-radius: 16px;
+    border-radius: 4px;
 
     padding: 1.5rem;
-    perspective: 62.5rem;
-  }
-
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-  .flip-card:hover .flip-card-inner,
-  .flip-card:active .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-
-  .flip-card-front,
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-
-  .flip-card-front h2,
-  .flip-card-back h2 {
-    color: #252525;
-
-    font-weight: 400;
-    font-size: 1.625rem;
-    text-align: center;
-  }
-
-  .flip-card-front p,
-  .flip-card-back p {
-    font-weight: 400;
-    font-size: 1rem;
-    text-align: center;
-
-    color: #828282;
+    perspective: 67.5rem;
   }
 
   .flip-card-back {
@@ -140,64 +87,64 @@ export const Card = styled.div`
   }
 
   .steel {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
   }
 
   .fire {
-    background-color: #fddfdf;
+    background-color: #ffffff;
   }
 
   .grass {
-    background-color: #defde0;
+    background-color: #ffffff;
   }
 
   .electric {
-    background-color: #fcf7de;
+    background-color: #ffffff;
   }
 
   .water,
   .ice {
-    background-color: #def3fd;
+    background-color: #ffffff;
   }
 
   .ground {
-    background-color: #f4e7da;
+    background-color: #ffffff;
   }
 
   .rock {
-    background-color: #d5d5d4;
+    background-color: #ffffff;
   }
 
   .fairy {
-    background-color: #fceaff;
+    background-color: #ffffff;
   }
 
   .poison {
-    background-color: #98d7a5;
+    background-color: #ffffff;
   }
 
   .bug {
-    background-color: #f8d5a3;
+    background-color: #ffffff;
   }
 
   .dragon {
-    background-color: #97b3e6;
+    background-color: #ffffff;
   }
 
   .psychic {
-    background-color: #eaeda1;
+    background-color: #ffffff;
   }
 
   .flying {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
   }
 
   .fighting {
-    background-color: #e6e0d4;
+    background-color: #ffffff;
   }
 
   .normal {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
   }
 `
 
@@ -206,3 +153,6 @@ export const Error = styled.span`
   color: #c53030;
   margin-top: 0.5rem;
 `
+
+
+

@@ -8,13 +8,13 @@ export default createGlobalStyle `
     }
 
     body {
-        background: linear-gradient(90deg, #b3e8ff 0%, #d8afff 50%, #ffb6fc 100%);
+        background: #474745;
 
         font-family: 'Poppins', sans-serif;
     }
 
     #root {
-        max-width: 960px;
+        max-width: 2000px;
         margin: 0 auto;
 
         display: flex;
