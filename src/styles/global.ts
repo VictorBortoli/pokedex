@@ -7,12 +7,6 @@ export default createGlobalStyle `
         box-sizing: border-box;
     }
 
-    html {
-        @media (max-width: 480px) {
-            font-size: 10px;
-        }
-    }
-
     body {
         background: linear-gradient(90deg, #b3e8ff 0%, #d8afff 50%, #ffb6fc 100%);
 
@@ -29,6 +23,10 @@ export default createGlobalStyle `
     }
 
     @media (max-width: 480px) {
+        html {
+            font-size: 10px;
+        }
+        
         #root {
             max-with: 300px;
         }
